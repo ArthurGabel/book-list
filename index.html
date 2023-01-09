@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.css">
+  <title>Book List</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="showcase">
+      <h1 id="showcase-title" class="title">Add Book</h1>
+    </div>
+    <form id="book-form">
+      <label for="title" id="book-title">Book Title:</label>
+      <input type="text" class="book-title input">
+     <label for="author">Author:</label>
+      <input type="text" class="author input">
+     <label for="isbn">ISBN:</label>
+      <input type="text" class="isbn input">
+      <input type="submit" value="SUBMIT" class="btn submit-btn">
+    </form>
+   
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th></th>
+        </tr>
+      </thead>
+      
+      <tbody id="book-list"></tbody>
+    </table>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
